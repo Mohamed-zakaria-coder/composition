@@ -1,11 +1,11 @@
 // General Rules
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: #f6f6f6;
-    scroll-behavior: smooth;
     font: {
         family: Tahoma;
         size: 16px;
