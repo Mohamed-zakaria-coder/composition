@@ -1,0 +1,190 @@
+
+
+// Start Slider
+.slider{
+    .quote{
+        display: block;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: bold;
+        color: #777;
+        width: 80%;
+        margin: 30px auto;
+    @media($maxMobile){
+        font-size: 15px;
+        width: 90%;
+    }   
+    }        
+    
+    img{
+        width: 100%;
+    }
+    .bullets{
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        justify-content: center;
+        li{
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 2px solid $greyColor;
+            &.active,
+            &:hover{
+                border-color: #333;
+                background-color: #FFF;
+            }
+        }
+    }
+    
+}
+// End Slider
+
+// Start Services
+.services{
+    .boxes-parent{
+        display: flex;
+        gap: 1%;
+        flex-wrap: wrap;
+        .service-box{
+            flex-basis: calc(98% / 3);
+            @media($maxMobile){
+                flex-basis: 100%;
+                text-align: center;
+            }
+            .box-header{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                
+                @media($maxMobile){
+                    justify-content: center;
+                    margin-top: 10px;
+                }
+                i{
+
+                }
+                h3{
+                
+                }
+                }
+            p{
+                line-height: 1.5;
+                color: #777;
+                padding-right: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: $redColor;
+                position: relative;
+                &::before{          
+                    content: "";
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    top: 50%;
+                    margin-top: -5px;
+                    right: -25px;
+                    border: 5px solid;
+                    border-color: transparent transparent transparent $redColor;
+                }
+            }   
+        }
+    }
+    
+}
+// End Services
+
+// Start Players
+.players{
+    .boxes-parent{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        @media($maxMobile){
+            justify-content: center;
+        }
+        @media($minSmall){
+
+            justify-content: center;
+        }
+        @media(minMedium){
+            justify-content: center;
+
+        }
+        .player-box{
+            @media($maxMobile){
+                flex-basis: calc((100%) - 5px);
+                text-align: center;
+                margin-top: 10px;
+            }
+            @media($minSmall){
+                flex-basis: calc((100% / 3) - 10px);
+                
+                text-align: center;
+            }
+            @media($minMedium){
+                flex-basis: calc((100% / 5) - 10px);
+                text-align: center;
+            }
+            
+            .box-header{
+                img{
+                    max-width: 100%;
+                }
+                h3{
+                font-size: 14px;
+                }
+                }
+            p{
+                line-height: 1.5;
+                color: #777;
+                padding-right: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: $redColor;
+                position: relative;
+                &::before{          
+                    content: "";
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    top: 50%;
+                    margin-top: -7px;
+                    right: -25px;
+                    border: 5px solid;
+                    border-color: transparent transparent transparent $redColor;
+                }
+            }   
+        }
+    }
+    
+}
+// End Players
+
+// Start Lorem
+.lorem{
+    padding: 40px 0;
+    .images-parent{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        .img-parent{
+
+            flex-basis: calc((100% - 60px) / 3);
+            @media($maxMobile){
+                flex-basis: 100%;
+                text-align: center;
+            }
+            img{
+                max-width: 100%;
+            
+            }
+        }
+    }
+}
+// End Lorem

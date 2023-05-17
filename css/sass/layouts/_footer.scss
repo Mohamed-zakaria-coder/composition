@@ -1,0 +1,101 @@
+// Start Footer
+.footer{
+    background-color: #ddd;
+    .all-sections-parent{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        
+        .blogs{
+            @media($minMedium){
+                flex-basis: calc(95% / 3);
+            }
+            .blog{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                @media($maxMobile){
+                    display: block;
+                    text-align: center;
+                }
+                img{
+                    max-width: 100%;
+                    @media($maxMobile){
+                        max-width: 50%;
+                    }
+                }
+                .content-parent{
+                    h4{
+                        color: $redColor;
+                    }
+                    p{
+                        line-height: 1.5;
+                        color: #777;
+                    }
+                }
+            }
+        }
+        .company-details{
+            @media($maxMobile){
+                margin: auto;
+                text-align: center;
+            }
+            @media($minMedium){
+                flex-basis: calc(95% / 3);
+            }
+            > div{
+                margin-top: 10px;
+                color: #777;
+                span{
+                    color: $redColor;
+                }
+            }
+        }
+        .contact{
+            @media($minMedium){
+                flex-basis: calc(95% / 3);
+            }
+            @media($maxMobile){
+                margin: auto;
+            }
+            h3{
+                margin-bottom: 0;
+            }
+            input, textarea{
+                border: none;
+                margin-top: 20px;
+                width: 100%;
+                padding: 5px 10px;
+                outline: none;
+            }
+            button{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                display: block;
+                @media($maxMobile){
+                    margin: 10px auto;
+                    display: block;
+                }
+            }
+            
+        }
+    }
+    .copyrights-parent{
+        border-top: 1px solid #777;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #777;
+        @media($maxMobile){
+            text-align: center;
+            display: block;
+        }
+        .copyrights{
+            @media($maxMobile){
+                margin-bottom: 5px;
+            }
+        } 
+    }
+}
+// End Footer

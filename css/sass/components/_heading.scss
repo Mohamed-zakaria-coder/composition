@@ -1,0 +1,23 @@
+.special-heading{
+    position: relative;
+    h2{
+        text-align: center;
+        background-color: $redColor;
+        color: white;
+        margin: 40px auto;
+        border-radius: 15px;
+        max-width: 400px;
+        padding: 10px 15px;
+    &::before{
+        content: "";
+        position: absolute;
+        width: calc(100%);
+        z-index: -1;
+        left: 0;
+        top: 50%;
+        background-color: #d9d9d9;
+        height: 1px;
+        
+    }
+    }
+}
